@@ -5,12 +5,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-class Gallery extends CI_Controller {
+class Gallery extends Application {
     /**
      * Index Page for this controller.
      */
     public function index()
     {
-        $this->load->view('gallery');
+        //$this->load->view('gallery');
+        $this->data['pagebody'] = 'about';
+        $this->render();
     }
 }
